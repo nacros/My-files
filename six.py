@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-for i in range(1,31):
-	if(i%3==0):
-		print(i)
+import smtplib
+s=smtplib.SMTP('smtp.gmail.com',587)
+s.starttls()
+s.login("hemavathy10iadrt@gmail.com","hema")
+message="hi"
+s.sendmail("hemavathy10iadrt@gmail.com","hemavathy10iadrt@gmail.com",message)
+s.quit()
+
