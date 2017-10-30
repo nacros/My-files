@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
-import time
+import time#importing time
 a=0
 b=5
 while a<10
